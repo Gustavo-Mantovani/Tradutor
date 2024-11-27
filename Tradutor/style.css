@@ -1,0 +1,127 @@
+/* Reseta alguns estilos e garante uma boa base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Usando uma fonte mais moderna */
+  }
+  
+  /* Fundo e alinhamento da página */
+  body {
+    background: linear-gradient(135deg, #6E7C8A, #4F5963);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Container do formulário */
+  .container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: translateY(-5px); /* Efeito sutil de elevação */
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Estilo para labels dos campos */
+  label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  /* Select e Textarea estilos */
+  select, textarea, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efeito de foco nos campos */
+  select:focus, textarea:focus, button:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Estilo do botão */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Textarea estilo */
+  textarea {
+    min-height: 120px;
+    resize: none;
+    background-color: #fafafa;
+  }
+  
+  /* Estilo do texto traduzido */
+  h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  /* Container para melhorar o layout */
+  div {
+    margin-bottom: 20px;
+  }
+  
+  /* Efeito de animação nos elementos */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adicionando animação de fade-in */
+  .container {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  

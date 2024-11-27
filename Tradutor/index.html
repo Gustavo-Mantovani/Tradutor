@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tradutor de Texto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tradutor de Texto</h1>
+    <div>
+      <label for="sourceLang">Idioma Original</label>
+      <select id="sourceLang">
+        <option value="pt">Português</option>
+        <option value="en">Inglês</option>
+        <option value="es">Espanhol</option>
+        <option value="fr">Francês</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="targetLang">Idioma de Destino</label>
+      <select id="targetLang">
+        <option value="en">Inglês</option>
+        <option value="pt">Português</option>
+        <option value="es">Espanhol</option>
+        <option value="fr">Francês</option>
+      </select>
+    </div>
+
+    <div>
+      <textarea id="sourceText" placeholder="Digite o texto a ser traduzido..."></textarea>
+    </div>
+
+    <button onclick="translateText()">Traduzir</button>
+
+    <div>
+      <h3>Texto Traduzido</h3>
+      <textarea id="translatedText" readonly placeholder="Aqui será o texto traduzido..."></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
